@@ -48,16 +48,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 	// 添加点击事件监听器
 	image.addEventListener('click', function () {
-		if (image.src.match('img/a1.jpg')) {
-			audio.play();
-			playButton.classList.remove('bx-play');
-			playButton.classList.add('bx-pause');
-			image.src = 'img/a1.jpg';
+		if (audio.paused) {
+			playSong(); // 暂停时点击播放
 		} else {
-			audio.pause();
-			playButton.classList.remove('bx-pause');
-			playButton.classList.add('bx-play');
-			image.src = 'img/a2.jpg';
+			pauseSong(); // 播放时点击暂停
 		}
 	});
 
@@ -100,21 +94,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		id: '0',
 		title: '在你的身边',
 		author: '呆呆破',
-		path: 'musics/呆呆破 - 在你的身边（Live）[mqms].ogg',
+		path: 'musics/呆呆破 - 在你的身边 (Live) [mqms].ogg',
 		time: "0:33"
 	},
 	{
 		id: '1',
 		title: '小情歌',
 		author: '苏打绿',
-		path: 'musics/苏打绿 - 小情歌（Live）[mqms].ogg',
+		path: 'musics/苏打绿 - 小情歌 [mqms2].ogg',
 		time: "4:33"
 	},
 	{
 		id: '2',
 		title: '女孩',
 		author: '陈立农',
-		path: 'musics/陈立农 - 女孩（Live）[mqms].ogg',
+		path: 'musics/陈立农 - 女孩 (Live) [mqms2].ogg',
 		time: "2:33"
 	},
 	{
