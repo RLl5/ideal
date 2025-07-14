@@ -92,24 +92,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	// 歌曲信息数组
 	const playlist = [{
 		id: '0',
-		title: '在你的身边',
-		author: '呆呆破',
-		path: 'musics/呆呆破 - 在你的身边 (Live) [mqms].ogg',
-		time: "0:33"
+		title: 'always online',
+		author: 'me',
+		path: 'musics/always online.mp3',
+		time: "1:16"
 	},
 	{
 		id: '1',
-		title: '小情歌',
-		author: '苏打绿',
-		path: 'musics/苏打绿 - 小情歌 [mqms2].ogg',
-		time: "4:33"
+		title: 'bgm',
+		author: 'me',
+		path: 'musics/bgm.mp3',
+		time: "0:21"
 	},
 	{
 		id: '2',
-		title: '女孩',
-		author: '陈立农',
-		path: 'musics/陈立农 - 女孩 (Live) [mqms2].ogg',
-		time: "2:33"
+		title: '任然',
+		author: '任然',
+		path: 'musics/任然.mp3',
+		time: "1:08"
 	},
 	{
 		id: '3',

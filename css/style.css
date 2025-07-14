@@ -680,20 +680,20 @@ body {
 
 .notetab {
     position: fixed;
-    height: 100vh;
+    height: 103vh;
     width: 25rem;
     margin-top: 3.125rem;
     background: #adffd0;
     border-radius: 1.25rem;
     text-decoration: none;
-    box-shadow: 0 0 1.875rem #adffd0;
+    box-shadow: 0 0 1.875rem #1f242d;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 1s;
 }
 
     .notetab .tabtext {
-        margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+        margin: 0.65rem 0.65rem 1.25rem 1.25rem;
         color: #adffc8;
         user-select: none;
     }
@@ -912,9 +912,6 @@ body {
 }
 
 
-    .contact.hide {
-        display: none;
-    }
 
 .contact-content {
     margin-left: 12.5rem;
