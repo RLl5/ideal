@@ -917,8 +917,8 @@ body {
     position:absolute;
     margin-left: 12.5rem;
     max-width: 100rem;
-    top:50%;
-    transform:translateY(-50%);
+    top:20%;
+    transform:translateY(-30%);
     text-align:center;
     align-items: center;
     opacity: 0;
@@ -933,7 +933,7 @@ body {
     }
 
     .contact-content p {
-        margin-top: 0.625rem;
+        margin-top: 0.525rem;
         font-size: 1.25rem;
     }
 
@@ -948,8 +948,8 @@ body {
     user-select: none;
     position:absolute;
     right:0rem;
-    top:50%;
-    transform:translateY(-50%);
+    top:40%;
+    transform:translateY(-40%);
     
 }
 
