@@ -947,7 +947,7 @@ body {
     animation-delay: 1s, 2s;
     user-select: none;
     position:absolute;
-    right:2rem;
+    right:0rem;
     top:50%;
     transform:translateY(-50%);
     

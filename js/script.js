@@ -109,7 +109,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		id: '2',
 		title: 'love',
 		author: 'joy',
-		path: 'musics/love',
+		path: 'musics/love.mp3',
 		time: "4:04"
 	},
 		{
