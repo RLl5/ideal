@@ -90,13 +90,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	});
 
 	// 歌曲信息数组
-	const playlist = [{
-		id: '0',
-		title: 'always online',
-		author: 'me',
-		path: 'musics/always online.mp3',
-		time: "1:16"
-	},
+	const playlist = [
+		{
+			id: '0',
+			title: '晴天',
+			author: '张雨桐',
+			path: 'musics/晴天-张雨桐.mp3',
+			time: "2:34"
+		},
 	{
 		id: '1',
 		title: 'bgm',
@@ -111,13 +112,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		path: 'musics/任然.mp3',
 		time: "1:08"
 	},
-	{
-		id: '3',
-		title: '晴天',
-		author: '张雨桐',
-		path: 'musics/晴天-张雨桐.mp3',
-		time: "2:34"
-	}
+		{
+			id: '3',
+			title: 'always online',
+			author: 'me',
+			path: 'musics/always online.mp3',
+			time: "1:16"
+		},
 	];
 
 	//当前播放歌曲
