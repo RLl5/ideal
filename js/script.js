@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 	//初始化
 	function init() {
-		render(playlist[currentSongIndex]);
+		loadSong(currentSongIndex);
 	}
 
 	const playButton = document.getElementById('play');
@@ -271,7 +271,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		playButton.classList.remove('bx-play');
 		playButton.classList.add('bx-pause');
 		image.src = 'img/a1.jpg';
-		const audio = document.getElementById('audio');
+		
 		
 	}
 	//暂停方法
