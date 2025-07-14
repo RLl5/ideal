@@ -93,10 +93,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	const playlist = [
 		{
 			id: '0',
-			title: '晴天',
-			author: '张雨桐',
-			path: 'musics/晴天-张雨桐.mp3',
-			time: "2:34"
+			title: 'sleep',
+			author: 'me',
+			path: 'musics/sleep.mp3',
+			time: "0:31"
 		},
 	{
 		id: '1',
@@ -107,10 +107,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	},
 	{
 		id: '2',
-		title: '任然',
-		author: '任然',
-		path: 'musics/任然.mp3',
-		time: "1:08"
+		title: 'love',
+		author: 'joy',
+		path: 'musics/love',
+		time: "4:04"
 	},
 		{
 			id: '3',
