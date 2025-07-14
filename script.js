@@ -61,6 +61,40 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		}
 	});
 
+	// 监听所有导航链接的点击
+	document.querySelectorAll('.navbar a, .drop a').forEach(link => {
+		link.addEventListener('click', function (e) {
+			e.preventDefault(); // 阻止默认跳转（避免跳顶部）
+
+			// 1. 获取目标界面的ID（从href中取，如"#home" → "home"）
+			const targetId = this.getAttribute('href').slice(1);
+
+			// 2. 隐藏所有内容区块
+			document.querySelectorAll('.content').forEach(content => {
+				content.style.display = 'none';
+			});
+
+			// 3. 显示目标界面
+			document.getElementById(targetId).style.display = 'block';
+
+			// 4. 更新导航高亮（给当前点击的链接加active，移除其他）
+			document.querySelectorAll('.navbar a, .drop a').forEach(item => {
+				item.classList.remove('active');
+			});
+			this.classList.add('active');
+		});
+	});
+
+	window.addEventListener('hashchange', () => {
+		const targetId = window.location.hash.slice(1);
+		// 调用导航切换逻辑，更新高亮和内容显示
+		document.querySelectorAll('.navbar a, .drop a').forEach(link => {
+			if (link.getAttribute('href') === `#${targetId}`) {
+				link.click(); // 触发已写好的点击逻辑
+			}
+		});
+	});
+
 	// 歌曲信息数组
 	const playlist = [{
 		id: '0',
@@ -250,14 +284,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		playButton.classList.add('bx-play');
 		image.src = 'img/a1.jpg';
 	}
-	//渲染歌曲方法
-	function render(song) {
-		title.innerHTML = song.title;
-		author.innerHTML = song.author;
-		endTime.innerHTML = song.time;
-		audio.volume = 0.7; //音量0~1;
-		audio.src = song.path; //音乐资源路径
-	}
+	
 	//加载歌曲方法
 	function loadSong(index) {
 		const song = playlist[index];
@@ -265,6 +292,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		author.innerHTML = song.author;
 		endTime.innerHTML = song.time;
 		audio.src = song.path;
+		audio.volume = 0.7; //音量0~1;
 	}
 
 	init();
