@@ -266,11 +266,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		playSong();
 	}
 	//播放方法
-	function playSong() {
+	function playSong(songPath) {
 		audio.play();
 		playButton.classList.remove('bx-play');
 		playButton.classList.add('bx-pause');
 		image.src = 'img/a1.jpg';
+		const audio = document.getElementById('audio');
+		audio.src = songPath; // 动态设置路径
+		audio.play(); // 播放
 	}
 	//暂停方法
 	function pauseSong() {

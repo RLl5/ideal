@@ -914,8 +914,12 @@ body {
 
 
 .contact-content {
+    position:absolute;
     margin-left: 12.5rem;
     max-width: 100rem;
+    top:50%;
+    transform:translateY(-50%);
+    text-align:center;
     align-items: center;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -942,6 +946,11 @@ body {
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 1s, 2s;
     user-select: none;
+    position:absolute;
+    right:2rem;
+    top:50%;
+    transform:translateY(-50%);
+    
 }
 
 @media(max-width: 1300px) {
